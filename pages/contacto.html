@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosque Magico</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"> 
+    <link rel="shortcut icon" href="../img/arboles.jpg" image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body class="fondo" >
+    <!-- menu de navegacion-->
+    <header >
+    <nav class="menu">
+        <div class="menu-logo">
+            <a href="../index.html"><img src="../img/arbol azul.jpg" class="logo"> <a>
+       
+        <div class="enlace">
+            <a href="../index.html">
+                <h1>Bosque Magico</h1>
+            </a>
+        </div>
+    </div>
+        <ul class="menu-list">
+            <li class="list"><a href="../index.html">inicio</a></li>
+            <li class="list"><a href="./quinessomos.html">Quienes somos</a></li>
+            <li class="list"><a href="./galeria.html">Galeria</a></li>
+            <li class="list active"><a href="./servicios.html">Servicios</a></li>
+
+            <li class="list"><a href="./reseñas.html">Reseñas</a></li>
+            <li class="list"><a href="./contacto.html">Contacto</a></li>
+
+        </ul>
+    </nav>
+</header>
+<!-- formulario de contacto-->
+    <form>
+
+        <section class="contacto-lista">
+
+            <div class="lista-contacto">
+                <h1>Datos Personales</h1>
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder=" ingrese su nombre" required id="nombre">
+            </div>
+            <div class="lista-contacto">
+                <label for="E-mail">E-mail</label>
+                <input type="E-mail" placeholder=" ingrese su E-mail " required id="E-mail">
+            </div>
+
+            <div class="lista-contacto">
+                <label for="Celular">Celular</label>
+                <input type="text" placeholder=" celular" required id="Celular">
+            </div>
+
+            <div class="lista-contacto">
+                <h3> Ingrese cantidad de invitados</h3>
+                <label for="Invitados Adultos">Invitados Adultos</label>
+                <input type="text" placeholder=" Invitados Adultos" required id="Invitados Adultos">
+            </div>
+
+            <div class="lista-contacto">
+                <label for="Invitados Niños">Invitados Niños</label>
+                <input type="text" placeholder=" Invitados Niños" required id="Invitados Niños">
+            </div>
+
+
+            <div class="lista-contacto">
+                <h3>Selecciona franja horaria </h3>
+                <input type="checkbox" id="Mediodia"><label for="Mediodia">Mediodia</label>
+                <input type="checkbox" id="Tarde"><label for="Tarde">Tarde</label>
+                <input type="checkbox" id="Noche"> <label for="Noche">Noche</label>
+            </div>
+            <div class="lista-contacto">
+                <h3>Seleccione la fecha deseada</h3>
+                <label for="seleccione Mes">Seleccione Mes</label>
+                <select>
+                    <option value="">Enero</option>
+                    <option value="">Febrero</option>
+                    <option value="">Marzo</option>
+                    <option value="">Abril</option>
+                    <option value="">Mayo</option>
+                    <option value="">Junio</option>
+                    <option value="">Julio</option>
+                    <option value="">Agosto</option>
+                    <option value="">Septiembre</option>
+                    <option value="">Octubre</option>
+                    <option value="">Noviembre</option>
+                    <option value="">Diciembre</option>
+                </select>
+                <label for="seleccione Dia">Seleccione dia</label>
+                <select>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
+                    <option value="">12</option>
+                    <option value="">13</option>
+                    <option value="">14</option>
+                    <option value="">15</option>
+                    <option value="">16</option>
+                    <option value="">17</option>
+                    <option value="">18</option>
+                    <option value="">19</option>
+                    <option value="">20</option>
+                    <option value="">21</option>
+                    <option value="">22</option>
+                    <option value="">23</option>
+                    <option value="">24</option>
+                    <option value="">25</option>
+                    <option value="">26</option>
+                    <option value="">27</option>
+                    <option value="">28</option>
+                    <option value="">29</option>
+                    <option value="">30</option>
+                    <option value="">31</option>
+                </select>
+            </div>
+            <div class="lista-contacto">
+                <h3>Ingrese mas consultas</h3>
+                <textarea class="textarea" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="lista-contacto">
+                <input class="botones" type="submit" value="Enviar">
+                <input class="botones" type="reset" value=" Resetear">
+
+            </div>
+        </section>
+
+        <!-- mapa-->
+        <section>
+            <div class="maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25157.202761209377!2d-57.56154379999998!3d-37.98528855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d953dd473d9f%3A0x618f30489ea31ed1!2sBosque%20M%C3%A1gico!5e0!3m2!1ses!2sar!4v1694911109669!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    </form>
+    <!-- piede de pagina-->
+    <footer class="pie">
+        <div class="redes-sociales ">
+            <a href="https://linktr.ee/bosquemagicoo"> <i class="social bi bi-whatsapp"></i>
+            </a>
+
+            <a href="https://www.instagram.com/bosquemagicoo/">
+                <i class="social bi bi-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/bosquemagicoo"><i class="social bi bi-facebook"></i></a>
+        </div>
+        <p>Todos los derechos reservados </p>
+        <p>Bosque Magico</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
