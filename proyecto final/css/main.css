@@ -1,0 +1,492 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .img {
+     max-width: 100%;
+ }
+
+ * {
+     box-sizing: border-box;
+ }
+
+ /*pagina de index*/
+ .inicio-inicio {
+     background-color: rgb(214, 224, 233);
+     background-position: 100vh;
+ }
+
+ .pages-inicio {
+
+     min-height: 100vh;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+     grid-template-areas: " inicio           inicio     servicios      contacto"
+         "                 quienes-somos     galeria       reseñas      contacto";
+     border-radius: 1rem;
+     align-content: center;
+     justify-content: center;
+     margin: 1rem;
+     gap: 1rem;
+
+
+
+
+ }
+
+ .inicio {
+     background-color: rgb(124, 143, 124);
+     grid-area: inicio;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     border-radius: 1rem;
+     font-size: 3rem;
+ }
+
+ .quienes-somos {
+
+     background-color: rgb(124, 143, 124);
+     grid-area: quienes somos;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     border-radius: 1rem;
+     font-size: 3rem;
+
+ }
+
+ .servicioss {
+
+     background-color: rgb(124, 143, 124);
+     grid-area: servicios;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     border-radius: 1rem;
+     font-size: 3rem;
+
+
+ }
+
+ .reseñas {
+     background-color: rgb(124, 143, 124);
+     grid-area: reseñas;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     border-radius: 1rem;
+     font-size: 3rem;
+ }
+
+ .galeria {
+     background-color: rgb(124, 143, 124);
+     grid-area: galeria;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     border-radius: 1rem;
+     font-size: 3rem;
+ }
+
+ .contacto {
+     background-color: rgb(124, 143, 124);
+     grid-area: contacto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     border-radius: 1rem;
+     font-size: 3rem;
+ }
+
+
+
+ /* menu de navegacion*/
+ .menu {
+
+     background-color: rgb(117, 136, 98);
+     flex-direction: row;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     gap: 1rem;
+     position: sticky;
+     top: 0;
+     min-width: 100%;
+     z-index: 1;
+
+ }
+
+ .menu-logo {
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+     padding: 1rem;
+
+ }
+
+ .logo {
+     width: 2rem;
+
+ }
+
+ .menu-list {
+
+     list-style-type: none;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 2rem;
+     align-items: center;
+ }
+
+ .list {
+     display: inline-block;
+
+
+ }
+
+ .list a {
+     color: black;
+     text-decoration: none;
+
+ }
+
+ .list:hover {
+     color: black;
+     text-decoration: underline double;
+     font-size: 1.2rem;
+ }
+
+
+ .enlace :hover {
+     font-size: 3rem;
+
+ }
+
+ /*pie de pagina */
+ .footer {
+     max-width: 100%;
+     background-color: rgb(110, 201, 207);
+     ;
+     padding-block: 20px;
+     caret-color: black;
+     text-align: center;
+     padding: 20px;
+
+
+ }
+
+
+ .redes-sociales {
+     background-color: black;
+     display: flex;
+     flex-direction: column;
+     position: fixed;
+     justify-content: center;
+     align-items: center;
+     bottom: 2rem;
+     left: 2rem;
+     padding: 1rem;
+     gap: 1rem;
+     border-radius: 1rem;
+ }
+
+ .bi {
+     font-size: 2rem;
+     color: whitesmoke;
+
+ }
+
+
+ /*contacto*/
+
+ .fondo {
+     background: url(../img/foto\ entrada.jpeg);
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: cover;
+     height: 100vh;
+     max-width: 100%;
+
+ }
+
+ .contactos {
+     background-color: rgb(110, 201, 207);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 3rem;
+     font-weight: 500;
+     padding: 1rem;
+
+ }
+
+
+
+ .lista-contacto {
+     font-size: 2rem;
+     gap: 3rem;
+     padding: 1rem;
+
+ }
+
+ .botones {
+     border-radius: 1rem;
+     font-size: 2rem;
+ }
+
+ .textarea {
+     font-size: 1.5rem;
+     border-radius: 2rem;
+ }
+
+ .maps {
+     display: flex;
+     align-items: center;
+
+     padding: 15px;
+
+ }
+
+ /*galeria de fotos*/
+ .galerias{ 
+    background-color: rgb(117, 136, 98);
+ }
+ 
+ .galeria_titulo {
+    background-color: rgb(110, 201, 207);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 1rem;    }
+
+
+ .galeria-carousel {
+
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+   
+
+   
+ }
+
+
+
+
+ 
+
+ /*quienes somos*/
+
+ .presentacion_contenido {
+
+     background-color: rgb(117, 136, 98);
+
+ }
+
+ .presentacion {
+     background-color: rgb(110, 201, 207);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 3rem;
+     font-weight: 500;
+     padding: 1rem;
+
+ }
+
+ .descricion-quienesomos {
+
+
+     width: 300px;
+     border-radius: 20px;
+     padding: 5px;
+     display: flex;
+     flex-direction: row;
+     gap: 5rem;
+     margin: 30px;
+
+ }
+
+ .descripcion {
+     width: 300px;
+     font-size: 1.5rem;
+     background-color: rgb(110, 201, 207);
+ }
+
+ .img-descripcion {
+     max-width: 100%;
+
+ }
+
+ .descripcion-titulo {
+     font-size: 30px;
+     margin: 10px;
+     gap: 1rem;
+
+ }
+
+ .descripcion-parrafo {
+     font-size: 25px;
+     margin: 10px;
+     gap: 1rem;
+
+
+ }
+
+ /*reseñas*/
+
+
+ .reseña {
+     background-color: rgb(117, 136, 98);
+ 
+ }
+ .reseñas_titulo {
+    background-color: rgb(110, 201, 207);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 1rem;
+
+    }
+
+ 
+ .reseñas_img {
+     display: flex;
+     display: inline;
+     max-width: 500px;
+
+     margin: 15px;
+     border-radius: 15px;
+ }
+
+
+
+
+
+ /*servicios*/
+ .servicio {
+
+     background-color: rgb(117, 136, 98);
+
+ }
+
+ .servicios {
+     background-color: rgb(110, 201, 207);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 3rem;
+     font-weight: 500;
+     padding: 1rem;
+
+
+ }
+
+ .servicios-tarjeta {
+
+
+     width: 400px;
+     border-radius: 20px;
+     padding: 5px;
+     display: flex;
+     flex-direction: row;
+     gap: 5rem;
+     margin: 30px;
+
+ }
+
+ .servicio-cartita {
+     width: 400px;
+     font-size: 1.5rem;
+     background-color: rgb(110, 201, 207);
+ }
+
+ .img-servicios {
+     max-width: 100%;
+
+ }
+
+ .servicio-titulo {
+     font-size: 30px;
+     margin: 10px;
+     gap: 1rem;
+
+ }
+
+ .servicio-parrafo {
+     font-size: 25px;
+     margin: 10px;
+     gap: 1rem;
+
+
+ }
+
+
+
+ /*responsil*/
+
+
+ @media (max-width:1093px) {
+
+     .descricion-quienesomos {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr;
+
+
+     }
+
+     .servicios-tarjeta {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr;
+
+     }
+
+
+
+
+ }
+
+ @media(max-width: 768px) {
+     .pages-inicio {
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr 1fr 1fr;
+         grid-template-areas:
+             " inicio           inicio  "
+             " servicios     quienes-somos  "
+             " galeria            reseñas   "
+             "contacto      contacto  ";
+
+     }
+ }
+
+ @media(max-width:709px) {
+     .descricion-quienesomos {
+         display: flex;
+         flex-direction: column;
+     }
+
+     .servicios-tarjeta {
+         display: flex;
+         flex-direction: column;
+
+     }
+ }
