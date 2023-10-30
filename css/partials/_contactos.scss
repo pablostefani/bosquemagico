@@ -1,0 +1,32 @@
+/*contacto*/
+
+.fondo {
+    background: url(../img/foto\ entrada.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+
+    .lista-contacto {
+
+        font-size: 2rem;
+        gap: 3rem;
+        padding: 1rem;
+
+        .botones {
+
+            border-radius: 1rem;
+            font-size: 2rem;
+
+
+        }
+
+        .textarea {
+            font-size: 1.5rem;
+            border-radius: 2rem;
+        }
+    }
+
+    }

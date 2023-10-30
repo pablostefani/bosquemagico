@@ -1,0 +1,73 @@
+/*servicios*/
+.servicio {
+
+    background-color:$colorprincipal;
+
+    .gifalicia {
+        gap: 20px;
+        padding: 20px;
+    
+    
+    }
+    
+    .descripcion-servicios {
+
+        padding: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center center;
+        justify-content: last baseline;
+        gap: 10rem;
+        margin: 15px;
+    
+        .descripcion-servicio {
+            background-color: #0197F6;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        
+            .servicios-body {
+                color: $textocolor;
+                padding-inline: 10px;
+                font-size: 1.5rem;
+                padding: 3rem;
+                width: 500px;
+            
+            
+                .servicios-titulo {
+                    font-size: 30px;
+                    margin: 10px;
+                    gap: 1rem;
+                
+                }
+
+                .servicios-parrafo¨ {
+                    font-size: 25px;
+                    margin: 10px;
+                    gap: 2rem;
+                
+                }
+
+                .btn {
+                    color: black;
+                    background-color:$colorsecundario;
+                    padding: 15px;
+                    font-size: 2rem;
+                
+                }
+
+            }
+
+            
+        }
+        
+    
+    }
+    
+
+}
+
+
+
+
