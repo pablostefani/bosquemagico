@@ -6,14 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.img {
   max-width: 100%;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 /*pagina de index*/
@@ -27,8 +20,9 @@
 }
 .inicio-inicio .pages-inicio {
   min-height: 100vh;
+  max-width: 100vw;
   display: grid;
-  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-columns: 20% 20% 20% 20%;
   grid-template-rows: 300px 300px;
   grid-template-areas: " inicio           inicio     servicios      contacto" "                 quienes-somos     galeria       reseñas      contacto";
   border-radius: 1rem;
@@ -104,28 +98,31 @@
 }
 
 /* menu de navegacion*/
-.menu {
-  background-color: #0197F6;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: last baseline;
-  gap: 3rem;
-  position: sticky;
-  top: 0;
-  min-width: 100%;
-  z-index: 1;
+.navbar .nav-link {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: larger;
 }
-.menu .menu-logo {
+.navbar .nav-link.active {
+  color: #f5f5f5;
+  font-weight: bold;
+}
+.navbar p {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar .menu-logo {
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 1rem;
 }
-.menu .menu-logo .logo {
-  width: 3rem;
+.navbar .menu-logo .logo {
+  width: 2rem;
 }
-.menu .menu-list {
+.navbar .menu-list {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -133,21 +130,16 @@
   gap: 2rem;
   align-items: center;
 }
-.menu .menu-list .list {
+.navbar .menu-list .list {
   display: inline-block;
 }
-.menu .menu-list .list a {
-  color: #f5f5f5;
-  text-decoration: none;
-  font-size: larger;
-}
-.menu .menu-list .list:hover {
+.navbar .menu-list .list:hover {
   color: #f5f5f5;
   -webkit-text-decoration: underline double;
           text-decoration: underline double;
   font-size: 1.5rem;
 }
-.menu .menu-list .enlace p {
+.navbar .menu-list .enlace p {
   color: #f5f5f5;
   text-decoration: none;
 }
@@ -162,13 +154,6 @@
   padding: 1rem;
 }
 
-.menu p {
-  color: #f5f5f5;
-  text-decoration: none;
-  font-size: 3rem;
-  font-weight: bold;
-}
-
 .redes-sociales {
   display: flex;
   flex-direction: row;
@@ -176,7 +161,7 @@
   align-items: center;
   bottom: 1rem;
   left: 1rem;
-  padding: 1rem;
+  padding: 0;
   gap: 1rem;
   border-radius: 1rem;
 }
@@ -193,28 +178,31 @@
 }
 
 /* menu de navegacion*/
-.menu {
-  background-color: #0197F6;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: last baseline;
-  gap: 3rem;
-  position: sticky;
-  top: 0;
-  min-width: 100%;
-  z-index: 1;
+.navbar .nav-link {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: larger;
 }
-.menu .menu-logo {
+.navbar .nav-link.active {
+  color: #f5f5f5;
+  font-weight: bold;
+}
+.navbar p {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar .menu-logo {
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 1rem;
 }
-.menu .menu-logo .logo {
-  width: 3rem;
+.navbar .menu-logo .logo {
+  width: 2rem;
 }
-.menu .menu-list {
+.navbar .menu-list {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -222,21 +210,16 @@
   gap: 2rem;
   align-items: center;
 }
-.menu .menu-list .list {
+.navbar .menu-list .list {
   display: inline-block;
 }
-.menu .menu-list .list a {
-  color: #f5f5f5;
-  text-decoration: none;
-  font-size: larger;
-}
-.menu .menu-list .list:hover {
+.navbar .menu-list .list:hover {
   color: #f5f5f5;
   -webkit-text-decoration: underline double;
           text-decoration: underline double;
   font-size: 1.5rem;
 }
-.menu .menu-list .enlace p {
+.navbar .menu-list .enlace p {
   color: #f5f5f5;
   text-decoration: none;
 }
@@ -251,19 +234,11 @@
   padding: 1rem;
 }
 
-.menu p {
-  color: #f5f5f5;
-  text-decoration: none;
-  font-size: 3rem;
-  font-weight: bold;
-}
-
 /*quienes somos*/
 .presentacion_contenido {
   background-color: #68C5DB;
 }
-
-.titulo_quienesosmos {
+.presentacion_contenido .titulo_quienesosmos {
   background-color: #0197F6;
   display: flex;
   flex-direction: column;
@@ -272,46 +247,38 @@
   padding: 1rem;
   gap: 1rem;
 }
-
-.titulo_quienesosmos h2 {
+.presentacion_contenido .titulo_quienesosmos h2 {
   font-size: 2rem;
 }
-
-.titulo_quienesosmos p {
+.presentacion_contenido .titulo_quienesosmos p {
   font-size: 1.5rem;
   color: #f5f5f5;
 }
-
-.descripcion_quienesomos {
+.presentacion_contenido .descripcion_quienesomos {
   padding: 60px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  align-items: center center;
-  justify-content: last baseline;
-  gap: 10rem;
-  margin: 15px;
+  justify-content: space-between;
+  gap: 1rem;
 }
-
-.descripcion-quienesomos1 {
+.presentacion_contenido .descripcion_quienesomos .descripcion-quienesomos1 {
   background-color: #0197F6;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   flex: 1;
 }
-
-.img-descripcion {
+.presentacion_contenido .descripcion_quienesomos .descripcion-quienesomos1 .img-descripcion {
   border-radius: 20px;
   max-width: 100%;
 }
-
-.descripcion-titulo {
+.presentacion_contenido .descripcion_quienesomos .descripcion-quienesomos1 .descripcion-titulo {
   font-size: 40px;
   margin: 10px;
   gap: 1rem;
 }
-
-.descripcion-parrafo {
+.presentacion_contenido .descripcion_quienesomos .descripcion-quienesomos1 .descripcion-parrafo {
   color: #f5f5f5;
   font-size: 25px;
   margin: 10px;
@@ -340,17 +307,20 @@
   background-color: #68C5DB;
 }
 .servicio .gifalicia {
-  gap: 20px;
+  display: block;
   padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 .servicio .descripcion-servicios {
-  padding: 60px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center center;
   justify-content: last baseline;
-  gap: 10rem;
-  margin: 15px;
+  gap: 1rem;
 }
 .servicio .descripcion-servicios .descripcion-servicio {
   background-color: #0197F6;
@@ -358,13 +328,13 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  min-width: 300px;
 }
 .servicio .descripcion-servicios .descripcion-servicio .servicios-body {
   color: #f5f5f5;
   padding-inline: 10px;
   font-size: 1.5rem;
   padding: 3rem;
-  width: 500px;
 }
 .servicio .descripcion-servicios .descripcion-servicio .servicios-body .servicios-titulo {
   font-size: 30px;
@@ -389,14 +359,16 @@
 }
 .reseña .reseña-img {
   display: flex;
-  justify-content: center center;
+  flex-wrap: wrap;
   align-items: center;
-  max-width: 100vh;
+  max-width: 100vw;
 }
 .reseña .reseña-img .reseñas_img {
-  width: 600px;
+  max-width: 500px;
+  min-width: 300px;
   border-radius: 15px;
   padding: 35px;
+  height: 453px;
 }
 .reseña .reseñas-transfor {
   transition: 0.5seg;

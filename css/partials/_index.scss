@@ -8,13 +8,13 @@
     height: 100vh;
 
     .pages-inicio {
-
         min-height: 100vh;
+        max-width: 100vw;
         display: grid;
-        grid-template-columns: 300px 300px 300px 300px;
+        grid-template-columns: 20% 20% 20% 20%;
         grid-template-rows: 300px 300px;
         grid-template-areas: " inicio           inicio     servicios      contacto"
-            "                 quienes-somos     galeria       reseñas      contacto";
+        "                 quienes-somos     galeria       reseñas      contacto";
         border-radius: 1rem;
         align-content: center;
         justify-content: center;
@@ -22,7 +22,7 @@
         gap: 1rem
     }
 
-    .pages-inicio a {
+    .pages-inicio a { 
         color: $textocolor;
         text-decoration: overline;
     }
@@ -54,7 +54,7 @@
 
     .servicioss {
 
-        background-color:$colorprincipal;
+        background-color: $colorprincipal;
         grid-area: servicios;
         display: flex;
         justify-content: center;
@@ -65,7 +65,7 @@
     }
 
     .reseñas {
-        background-color:$colorprincipal;
+        background-color: $colorprincipal;
         grid-area: reseñas;
         display: flex;
         justify-content: center;
@@ -87,7 +87,7 @@
     }
 
     .contacto {
-        background-color:$colorsecundario;
+        background-color: $colorsecundario;
         grid-area: contacto;
         display: flex;
         justify-content: center;

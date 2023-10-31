@@ -1,12 +1,11 @@
 .redes-sociales {
-
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
     bottom: 1rem;
     left: 1rem;
-    padding: 1rem;
+    padding: 0;
     gap: 1rem;
     border-radius: 1rem;
 
@@ -17,7 +16,6 @@
     }
 
 }
-
 .index-redes {
     background-color: #0197F6;
     display: flex;

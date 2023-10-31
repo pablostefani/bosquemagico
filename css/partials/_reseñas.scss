@@ -6,13 +6,15 @@
    
     .reseña-img {
         display: flex;
-        justify-content: center center;
+        flex-wrap: wrap;
         align-items: center;
-        max-width: 100vh;
+        max-width: 100vw;
         .reseñas_img {
-            width: 600px;
+            max-width: 500px;
+            min-width: 300px;
             border-radius: 15px;
             padding: 35px;
+            height: 453px;
         
         }
     }
