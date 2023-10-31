@@ -1,6 +1,6 @@
-@media screen and (max-width:1100px) {
-    .pages-inicio
-     display: grid;
+@media screen and (max-width:1100px){
+    .pages-inicio {
+    display: grid;
     grid-template-columns: 90%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
@@ -12,11 +12,12 @@
         "contacto";
 
 }
-
+}
 @media screen and (max-width:500px) {
-.pages-inicio a 
-    font-size: 30px !important; 
+.pages-inicio a { 
+    font-size:30px !important; 
     
+}
 }
   
     
