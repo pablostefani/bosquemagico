@@ -1,0 +1,77 @@
+/*servicios*/
+.servicio {
+
+    background-color:$colorprincipal;
+
+    .gifalicia {
+        display: block;
+        padding: 20px;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .descripcion-servicios {
+
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center center;
+        justify-content: last baseline;
+        gap: 1rem;
+    
+        .descripcion-servicio {
+            background-color: #0197F6;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            min-width: 300px;
+        
+            .servicios-body {
+                color: $textocolor;
+                display: flex;
+                flex-direction: column;
+                padding-inline: 10px;
+                font-size: 1.4rem;
+                padding: 2rem;
+            
+            
+                .servicios-titulo {
+                    font-size: 30px;
+                    margin: 10px;
+                    gap: 1rem;
+                
+                }
+
+                .servicios-parrafo¨ {
+                    font-size: 25px;
+                    margin: 10px;
+                    gap: 2rem;
+                
+                }
+
+                .btn {
+                    color: black;
+                    background-color:$colorsecundario;
+                    padding: 15px;
+                    font-size: 2rem;
+                
+                }
+
+            }
+
+            
+        }
+        
+    
+    }
+    
+
+}
+
+
+
+
+

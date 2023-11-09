@@ -1,0 +1,106 @@
+/*pagina de index*/
+.inicio-inicio {
+    background-image: url(../img/mesas\ yarbol\ pared.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+   
+ 
+
+
+    .pages-inicio {
+        min-height: 100vh;
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-template-rows: 300px 300px;
+        grid-template-areas: " inicio           inicio     servicios      contacto"
+        "                 quienes-somos     galeria       reseñas      contacto";
+        border-radius: 1rem;
+        align-content: center;
+        justify-content: center;
+        margin: 1rem;
+        gap: 1rem
+    }
+
+    .pages-inicio a { 
+        color: $textocolor;
+        text-decoration: overline;
+    }
+
+    .inicio {
+        background-color: #448FA3;
+        grid-area: inicio;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 1rem;
+        font-size: 3rem;
+    }
+
+    .quienes-somos {
+
+        background-color: #0197F6;
+        grid-area: quienes somos;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 1rem;
+        font-size: 3rem;
+
+    }
+
+    .servicioss {
+
+        background-color: $colorprincipal;
+        grid-area: servicios;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 1rem;
+        font-size: 3rem;
+        animation-delay: 0.1s;
+    }
+
+    .reseñas {
+        background-color: $colorprincipal;
+        grid-area: reseñas;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 1rem;
+        font-size: 3rem;
+        animation-delay: 0.2s;
+    }
+
+    .galeria {
+        background-color: #0197F6;
+        grid-area: galeria;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 1rem;
+        font-size: 3rem;
+    }
+
+    .contacto {
+        background-color: $colorsecundario;
+        grid-area: contacto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 1rem;
+        font-size: 3rem;
+    }
+
+
+
+}

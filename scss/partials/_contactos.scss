@@ -1,0 +1,43 @@
+/*contacto*/
+
+.fondo {
+    background: url(../img/foto\ entrada.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+
+    .form-maps {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+        align-items: stretch;
+        gap: 1rem;
+
+
+
+        .lista-contacto {
+
+            font-size: 2rem;
+            gap: 1rem;
+            padding: 1rem;
+            background-color: rgba(255, 255, 255, .3);
+
+            .botones {
+           
+                border-radius: 1rem;
+                font-size: 2rem;
+
+
+            }
+
+            .textarea {
+                font-size: 1.5rem;
+                border-radius: 2rem;
+            }
+        }
+    }
+}

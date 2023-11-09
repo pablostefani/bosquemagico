@@ -1,0 +1,74 @@
+/* menu de navegacion*/
+.navbar {
+    .nav-link {
+        color: $textocolor;
+        text-decoration: none;
+        font-size: larger
+    }
+
+    .nav-link.active {
+        color: $textocolor;
+        font-weight: bold;
+    }
+
+    p {
+        color: $textocolor;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .menu-logo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+
+        .logo {
+            width: 2rem;
+
+        }
+    }
+
+
+
+    .menu-list {
+
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+
+        .list {
+            display: inline-block;
+
+        }
+
+
+
+        .list:hover {
+            color: $textocolor;
+            text-decoration: underline double;
+            font-size: 1.5rem;
+        }
+
+        .enlace p {
+            color: $textocolor;
+            text-decoration: none;
+        }
+    }
+
+}
+
+.titulopresentacion {
+    background-color: $colorsecundario;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 1rem;
+
+}

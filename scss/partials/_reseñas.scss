@@ -1,0 +1,28 @@
+/*reseñas*/
+
+.reseña {
+    background-color:$colorprincipal;
+
+   
+    .reseña-img {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        max-width: 100vw;
+        .reseñas_img {
+            max-width: 500px;
+            min-width: 300px;
+            border-radius: 15px;
+            padding: 35px;
+            height: 453px;
+        
+        }
+    }
+    .reseñas-transfor {
+        transition: .2s;
+    }
+    .reseñas-transfor:hover {
+        transform: scale(1.2);
+    }
+    
+}

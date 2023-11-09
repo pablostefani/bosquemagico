@@ -11,12 +11,11 @@
 
 /*pagina de index*/
 .inicio-inicio {
-  background-image: url(../img/mesas\ yarbol\ pared.jpeg);
+  background-image: url(../img/mesas\ yarbol\ pared.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
 }
 .inicio-inicio .pages-inicio {
   min-height: 100vh;
@@ -65,6 +64,7 @@
   text-decoration: none;
   border-radius: 1rem;
   font-size: 3rem;
+  animation-delay: 0.1s;
 }
 .inicio-inicio .reseñas {
   background-color: #68C5DB;
@@ -75,6 +75,7 @@
   text-decoration: none;
   border-radius: 1rem;
   font-size: 3rem;
+  animation-delay: 0.2s;
 }
 .inicio-inicio .galeria {
   background-color: #0197F6;
@@ -296,10 +297,11 @@
   max-width: 20rem;
   margin: 15px;
   border-radius: 15px;
+  transition: 0.2s;
 }
 
 .galeriatransfor:hover {
-  transform: scale(2);
+  transform: scale(1.2);
 }
 
 /*servicios*/
@@ -332,9 +334,11 @@
 }
 .servicio .descripcion-servicios .descripcion-servicio .servicios-body {
   color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
   padding-inline: 10px;
-  font-size: 1.5rem;
-  padding: 3rem;
+  font-size: 1.4rem;
+  padding: 2rem;
 }
 .servicio .descripcion-servicios .descripcion-servicio .servicios-body .servicios-titulo {
   font-size: 30px;
@@ -371,15 +375,15 @@
   height: 453px;
 }
 .reseña .reseñas-transfor {
-  transition: 0.5seg;
+  transition: 0.2s;
 }
 .reseña .reseñas-transfor:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 /*contacto*/
 .fondo {
-  background: url(../img/foto\ entrada.jpeg);
+  background: url(../img/foto\ entrada.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -387,16 +391,25 @@
   height: 100vh;
   max-width: 100%;
 }
-.fondo .lista-contacto {
-  font-size: 2rem;
-  gap: 3rem;
-  padding: 1rem;
+.fondo .form-maps {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: stretch;
+  gap: 1rem;
 }
-.fondo .lista-contacto .botones {
+.fondo .form-maps .lista-contacto {
+  font-size: 2rem;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.fondo .form-maps .lista-contacto .botones {
   border-radius: 1rem;
   font-size: 2rem;
 }
-.fondo .lista-contacto .textarea {
+.fondo .form-maps .lista-contacto .textarea {
   font-size: 1.5rem;
   border-radius: 2rem;
 }
@@ -411,11 +424,13 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .pages-inicio {
+  .inicio-inicio .pages-inicio {
     display: grid;
     grid-template-columns: 90%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "inicio" "quienes-somos" "galeria" "servicios" "reseñas" "contacto";
+    color: #f5f5f5;
+    text-decoration: overline;
   }
 }
 @media screen and (max-width: 500px) {

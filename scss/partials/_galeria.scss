@@ -1,0 +1,22 @@
+/*galeria de fotos*/
+.galerias {
+    background-color:$colorprincipal;
+
+}
+
+.galeriaimg {
+
+    display: flex;
+    display: inline;
+    max-width: 20rem;
+    margin: 15px;
+    border-radius: 15px;
+    transition: .2s;
+
+
+}
+
+.galeriatransfor:hover {
+
+    transform: scale(1.2)
+}
